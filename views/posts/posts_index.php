@@ -1,4 +1,4 @@
-<h1>Welcome!</h1>
+<h1>welcome!</h1>
 <!-- Code for ajax -->
 <script type="text/javascript">
     function clickme() {
