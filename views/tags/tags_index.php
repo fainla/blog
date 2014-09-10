@@ -1,13 +1,6 @@
 
-<?foreach( $tags as $tag ):?>
-<div class="list-group">
-  <a href="#" class="list-group-item active">
-Cras justo odio
-</a>
-  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-  <a href="#" class="list-group-item">Morbi leo risus</a>
-  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-  <a href="#" class="list-group-item">Vestibulum at eros</a>
-</div>
-
-<?endforeach?>
+<ul class="list-group">
+    <? foreach ($tags as $tag): ?>
+        <li class="list-group-item"><a href="tags/view/<?= $tag['tag_name'] ?>"><?=$tag['tag_name']?></a></li>
+    <? endforeach ?>
+</ul>
