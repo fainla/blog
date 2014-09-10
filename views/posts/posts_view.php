@@ -8,4 +8,5 @@
                 <span class="label label-danger">Danger</span></div>
         </div>
 
-
+<?foreach ($tags as $tag):?><a href="tags/view/<?=$tag['tag_name']?>"><span class="lable-info"><?=$tag['tag_name']?></span>
+</a><?endforeach?>
