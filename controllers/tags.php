@@ -1,11 +1,4 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: Maile
- * Date: 4.09.14
- * Time: 16:16
- */
 class tags extends Controller
 {
     function index()
@@ -15,4 +8,12 @@ class tags extends Controller
                             GROUP BY tag_id"
         );
     }
+
+
+function view()
+{
+    $tag_name = $this->params[0];
+    $this->posts = get_all ("SELECT * FROM post_tags NATURAL JOIN tag NATURAL JOIN post
+                            WHERE tag_name = '$tag_name'");
+}
 }

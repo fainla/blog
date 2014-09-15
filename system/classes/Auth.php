@@ -12,6 +12,8 @@ class Auth
 	{
 		if (isset($_SESSION['user_id'])) {
 			$this->logged_in = TRUE;
+            $this->username = get_first("SELECT username FROM user WHERE user_id = '{$_SESSION['user_id']}'");
+            var_dump($this->username);
 		}
 	}
 
