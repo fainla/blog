@@ -12,3 +12,9 @@
 
 <?endforeach?>
 
+<hr>
+<form method="post">
+    <input name="data[post_subject]" type="text" placeholder="Pealkiri"/> <br><br>
+    <textarea name="data[post_text]" id ='' cols="30" rows="10" placeholder="Sisu"></textarea> <br> <br>
+    <button class="btn btn-default">Nupp</button>
+</form>
