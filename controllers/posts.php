@@ -6,7 +6,7 @@ class posts extends Controller{
         $this->posts = get_all("SELECT * FROM post");
         $_tags = get_all ("select * from post_tags natural join tag");
         foreach ($_tags as $tag) {
-            $this->tags[$tag['post_id']][] = $tag['tag_name'];
+            $this->tag[$tag['post_id']][] = $tag['tag_name'];
         }
     }
 

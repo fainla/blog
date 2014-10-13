@@ -56,7 +56,7 @@
                             </div>
                         </li><? endforeach ?>
                 </ul>
-                <form  method= "post"><p><textarea name="data[comment text]" style="width: 100%" id="" cols="38" rows="5"
+                <form  method= "post"><p><textarea name="data[comment_text]" style="width: 100%" id="" cols="38" rows="5"
                                                 placeholder="sinu kommentaar"></textarea></p>
                                                 <p><button class="btn btn-info">Sisesta kommentaar</button></form></p>
             </div>
