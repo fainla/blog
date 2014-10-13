@@ -1,6 +1,6 @@
-<?foreach( $posts as $post ):?>
+<? foreach( $posts as $post ):?>
     <?foreach ($tags[$post['post_id']]as $tag):?>
-        <a href="#"><span class="label" style="background-color: #5bc0de"><?=$tag?></span></a>
+        <a href="#"><span class="label label-danger" style="background-color: #5bc0de"><?=$tag?></span></a>
     <?endforeach?>
     <div class="span8">
         <h1><a href="<?= BASE_URL ?>posts/view/<?= $post['post_id'] ?>"><?=$post['post_subject']?></a></h1>
