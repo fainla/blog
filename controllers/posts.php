@@ -8,7 +8,6 @@ class posts extends Controller{
         foreach ($_tags as $tag) {
             $this->tags[$tag['post_id']][] = $tag['tag_name'];
         }
-        var_dump($this->tags);
     }
 
     function index_ajax(){
